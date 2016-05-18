@@ -13,6 +13,9 @@
 		354DADFF1CEB6F89001BA3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354DADFD1CEB6F89001BA3E5 /* Main.storyboard */; };
 		354DAE011CEB6F89001BA3E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354DAE001CEB6F89001BA3E5 /* Assets.xcassets */; };
 		354DAE041CEB6F89001BA3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354DAE021CEB6F89001BA3E5 /* LaunchScreen.storyboard */; };
+		354DAE0D1CEB7003001BA3E5 /* GCTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 354DAE0C1CEB7003001BA3E5 /* GCTodo.m */; };
+		354DAE131CEB7933001BA3E5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354DAE121CEB7933001BA3E5 /* DetailViewController.m */; };
+		354DAE161CEB8262001BA3E5 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354DAE151CEB8262001BA3E5 /* AddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		354DAE001CEB6F89001BA3E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354DAE031CEB6F89001BA3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		354DAE051CEB6F89001BA3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354DAE0B1CEB7003001BA3E5 /* GCTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTodo.h; sourceTree = "<group>"; };
+		354DAE0C1CEB7003001BA3E5 /* GCTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTodo.m; sourceTree = "<group>"; };
+		354DAE111CEB7933001BA3E5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		354DAE121CEB7933001BA3E5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		354DAE141CEB8262001BA3E5 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		354DAE151CEB8262001BA3E5 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,9 @@
 		354DADF31CEB6F89001BA3E5 /* GCTodoList */ = {
 			isa = PBXGroup;
 			children = (
-				354DADF71CEB6F89001BA3E5 /* AppDelegate.h */,
-				354DADF81CEB6F89001BA3E5 /* AppDelegate.m */,
-				354DADFA1CEB6F89001BA3E5 /* ViewController.h */,
-				354DADFB1CEB6F89001BA3E5 /* ViewController.m */,
+				354DAE0E1CEB7014001BA3E5 /* Model */,
+				354DAE0F1CEB790D001BA3E5 /* AppDelegate */,
+				354DAE101CEB791C001BA3E5 /* ViewControllers */,
 				354DADFD1CEB6F89001BA3E5 /* Main.storyboard */,
 				354DAE001CEB6F89001BA3E5 /* Assets.xcassets */,
 				354DAE021CEB6F89001BA3E5 /* LaunchScreen.storyboard */,
@@ -77,6 +85,37 @@
 				354DADF51CEB6F89001BA3E5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		354DAE0E1CEB7014001BA3E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				354DAE0B1CEB7003001BA3E5 /* GCTodo.h */,
+				354DAE0C1CEB7003001BA3E5 /* GCTodo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		354DAE0F1CEB790D001BA3E5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				354DADF71CEB6F89001BA3E5 /* AppDelegate.h */,
+				354DADF81CEB6F89001BA3E5 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		354DAE101CEB791C001BA3E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				354DADFA1CEB6F89001BA3E5 /* ViewController.h */,
+				354DADFB1CEB6F89001BA3E5 /* ViewController.m */,
+				354DAE111CEB7933001BA3E5 /* DetailViewController.h */,
+				354DAE121CEB7933001BA3E5 /* DetailViewController.m */,
+				354DAE141CEB8262001BA3E5 /* AddViewController.h */,
+				354DAE151CEB8262001BA3E5 /* AddViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +149,7 @@
 				TargetAttributes = {
 					354DADF01CEB6F89001BA3E5 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UL5ZRM2Y7L;
 					};
 				};
 			};
@@ -149,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354DAE131CEB7933001BA3E5 /* DetailViewController.m in Sources */,
 				354DADFC1CEB6F89001BA3E5 /* ViewController.m in Sources */,
+				354DAE161CEB8262001BA3E5 /* AddViewController.m in Sources */,
 				354DADF91CEB6F89001BA3E5 /* AppDelegate.m in Sources */,
 				354DADF61CEB6F89001BA3E5 /* main.m in Sources */,
+				354DAE0D1CEB7003001BA3E5 /* GCTodo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +306,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GCTodoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCouto.GCTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +321,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GCTodoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GCouto.GCTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
